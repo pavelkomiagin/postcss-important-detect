@@ -11,7 +11,7 @@
     "test": "ava"
   },
   "repository": "pavelkomiagin/postcss-important-detect",
-  "keywords": ["postcss"],
+  "keywords": ["postcss-plugin"],
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {

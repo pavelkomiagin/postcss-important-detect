@@ -1,7 +1,13 @@
 'use strict';
 
-module.exports = function postcssImportantDetect (options) {
-  options = options || {};
+var postcss = require('postcss');
 
-  return true;
-};
+module.exports = postcss.plugin('postcss-important-detect', function () {
+  return function(css, result) {
+    css.walkDecls(function(decl) {
+      if (decl.important) {
+        result.warn('This property contain !important: ', { node: decl });
+      }
+    });
+  };
+});
