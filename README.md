@@ -12,7 +12,9 @@ npm install --save postcss-important-detect
 
 ```javascript
 postcss([postcss-important-detect]).process(css).then(function(result) {
-  result.warnings();
+  result.warnings().forEach(function (message) {
+    console.log(message.toString());
+  });
 });
 ```
 
