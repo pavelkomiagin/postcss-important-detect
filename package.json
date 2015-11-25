@@ -1,0 +1,20 @@
+{
+  "name": "postcss-important-detect",
+  "description": "PostCSS plugin for searching !important in rule declarations",
+  "author": "Pavel Komiagin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": "pavelkomiagin/postcss-important-detect",
+  "keywords": ["postcss"],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "*"
+  }
+}
