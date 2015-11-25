@@ -11,9 +11,9 @@ npm install --save postcss-important-detect
 ## Usage
 
 ```javascript
-var postcssImportantDetect = require('postcss-important-detect')
-
-postcssImportantDetect()  // => true
+postcss([postcss-important-detect]).process(css).then(function(result) {
+  result.warnings();
+});
 ```
 
 ## License
